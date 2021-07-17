@@ -680,6 +680,9 @@ section {
 	transform: translateY(-35%);
 	top: 35%;
 }
+.just-step-away .container-fluid {
+    padding-left: 15px;
+}
 .just-step-away h1 {
 	font-size: 3.875em;
 }
@@ -687,10 +690,12 @@ section {
 	font-size: 1.5em !important;
 }
 .just-step-away .flickity-prev-next-button {
-	transform: translateY(-25%) scale(0.8)
-}
-.just-step-away .flickity-button {
-	left: -55px
+	transform: translateY(0) scale(0.8);
+    position: relative;
+    left: 0;
+    top: 0 !important;
+    margin: auto;
+    text-align: center;
 }
 .testimonials .carousel {
 	padding: 4em 2em 2em 2em
