@@ -258,7 +258,7 @@ header button{ display: none}
     margin: 5px auto;
     transition: all .3s ease-in-out;
 }
-		header .btn{ padding: 7px 5px; margin-right: 2px}
+		header .btn{ padding: 5px; margin: 0; font-size: 0.6em;}
 		header .btn-outline-light{ border-color:#000; color:#000}
 		header .nav-overlay-mobile {
     position: fixed;
@@ -309,20 +309,24 @@ header .burger-button.active .line:nth-child(3) {    transform: translateY(-7px)
     bottom: 0;
 }
 		.about, .life-game{ min-height:auto; padding: 5em 0}
-		.life-game h3{ font-size:11em}
+		.life-game h3{ font-size:9em}
+		.life-game h2{ font-size:2.7em !important}
 		.video video {    margin: 2em 0;}
 		.video-reso {  padding: 2em 0;}
 		.video-reso video{ margin-bottom: 2em}
+		.video-reso .reso-content{ padding: 0}
 		.video-reso .reso-content p{ font-size:1.2em}
 		.amenities .carousel-cell p.description{ width:90%}
 		.amenities{ height:610px}
-		.amenities .flickity-prev-next-button {    	transform: translateY(-35%);		top: 35%;}
-		.just-step-away .carousel-cell h2{font-size: 1.875em !important;}
+		.amenities .flickity-prev-next-button {    	transform: translateY(-35%); top: 35%;}
+		.just-step-away h1 {font-size: 3.875em;}
+		.just-step-away .carousel-cell h2{font-size: 1.5em !important;}
 		.just-step-away .flickity-prev-next-button{ transform: translateY(-25%) scale(0.8)}
 		.just-step-away .flickity-button{ left:-55px}
-		.testimonials .carousel {    padding: 4em 2em 0em 2em}
+		.testimonials .carousel {    padding: 4em 2em 2em 2em}
 		.carousel-cell { width: 100% !important; }
 		.testimonials h3{ letter-spacing: 3px}
 		.copyright .text-right{ text-align:left !important}
+		.copyright p {    padding: 0.5em 0 0 !important; margin: 0}
 		footer{ padding: 3em 0 2em 0}
 }
