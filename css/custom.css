@@ -524,6 +524,7 @@ section {
 	min-height: auto
 }
 header {
+	height: 60px !important;
 	background: #fff!important;
 	display: flex;
 	align-items: center;
