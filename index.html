@@ -14,6 +14,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
      <link href="css/flickity-docs.css" rel="stylesheet"> 
   	<link href="css/custom.css" rel="stylesheet"> 
+  	<link href="css/animate.min.css" rel="stylesheet">  	
   </head>
 
   <body id="top">
@@ -64,7 +65,7 @@
     
     <!--hero banner section-->
     <section class="hero-banner">
-     <div class="hero-content">
+     <div class="hero-content wow fadeInLeft" data-wow-delay="0.5s">
     <h1>Amazing Amenities</h1>
     <h2>Stunning rare views</h2>
     <h3>Unique lifestyle experience</h3>
@@ -79,9 +80,9 @@
     <div class="container">
 		<div class="row justify-content-md-center">
    <div class="col-12 col-xl-8">
-    <h2>About TDC Rentals</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <a href="#" class="btn btn-light">BOOK MY STAY!</a>
+    <h2 class="wow fadeIn data-wow-delay="0.2s"">About TDC Rentals</h2>
+    <p class="wow fadeIn data-wow-delay="0.2s"">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a href="#" class="btn btn-light wow fadeIn data-wow-delay="0.2s"">BOOK MY STAY!</a>
     </div>
    </div>
    </div>
@@ -90,7 +91,7 @@
         <!--amenities slider section-->
     <section class="amenities" style="overflow:hidden">
    <div class="duo__cell">
-    <div class="carousel" data-flickity="{ &quot;wrapAround&quot;: true }">
+    <div class="carousel wow fadeInLeft" data-wow-delay="0.5s" data-flickity="{ &quot;wrapAround&quot;: true }">
       <div class="carousel-cell">
       <h2>Sky Lounge</h2>
       <img src="images/sky-lounge-tdc2.jpg" alt="Sky Lounge" />
@@ -178,14 +179,14 @@
      <!--cta section-->
     <section class="life-game align-items-center">
     <div class="container">
-    <h2>LIFE'S A GAME</h2>
-    <h3>LIVE IT!</h3>    	
+    <h2 class="wow fadeInLeft">LIFE'S A GAME</h2>
+    <h3 class="wow fadeInRight">LIVE IT!</h3>    	
     </div>    	
     </section>
     
     
     <!--video section-->
-    <section class="video">
+    <section class="video wow fadeIn">
     <div class="container">
     <video width="100%" height="" poster="images/video-thumbnail1.jpg" controls preload="metadata">
   <source src="images/tdc3-2.mp4" type="video/mp4">
@@ -194,7 +195,7 @@
     </section>
     
     <!--video section-->
-    <section class="video-reso">
+    <section class="video-reso wow fadeIn">
     <div class="container-fluid">
     <div class="row">
     <div class="col-12 col-xl-6"><video width="100%" height="" poster="images/video-thumbnail2.jpg" controls preload="metadata">
@@ -221,7 +222,7 @@
     
     
     <!--just step away slider section-->
-    <section class="just-step-away">
+    <section class="just-step-away wow fadeIn" data-wow-delay="0.5s">
     <div class="container-fluid">
     <h1>Just Step Away</h1>	
     
@@ -263,7 +264,7 @@
     </section>
     
     <!--testimonial section-->
-    <section class="testimonials align-items-center">
+    <section class="testimonials align-items-center wow fadeInUp" data-wow-delay="0.5s">
     <div class="container">
     <div class="row justify-content-md-center">
     <div class="col-sm-9">    
@@ -357,13 +358,7 @@ Canada</li>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
   <script src="js/flickity-docs.min.js"></script>
-  <script>
-	  $(".burger-button").click(function(){
-  $(".nav-overlay-mobile").toggleClass("active");
-		  $(".burger-button").toggleClass("active");
-});
-	</script>
-  
-  
+ <script src="js/wow.min.js"></script>
+ 
   </body>
 </html>
