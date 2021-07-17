@@ -711,7 +711,8 @@ section {
 	width: 100% !important;
 }
 .testimonials h3 {
-	letter-spacing: 3px
+	letter-spacing: 3px;
+	font-size:2.2em
 }
 .copyright .text-right {
 	text-align: left !important
