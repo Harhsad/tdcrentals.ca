@@ -511,7 +511,7 @@ header button {
 }
 @media screen and (max-width:1200px){
 header {
-	height: 60px !important;
+	height: 50px !important;
 	background: #fff!important;
 	display: flex;
 	align-items: center;
