@@ -672,10 +672,16 @@ section {
 }
 	.amenities .carousel-cell h2{font-size: 2.2em !important;}
 .amenities .carousel-cell p.description {
-	width: 90%
+	width: 90%;
+	text-align: justify;
+    text-align-last: center
 }
 .amenities {
-	height: 610px
+	height: 500px;
+	padding: 0;
+}
+.amenities div {
+    margin-bottom: 0;
 }
 .amenities .flickity-prev-next-button {
 	transform: translateY(-35%) scale(0.7);
