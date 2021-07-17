@@ -139,10 +139,6 @@ header .btn {
 	color: #000;
 	border-color: #000
 }
-section {
-	min-height: 500px;
-	text-align: center
-}
 .hero-banner {
 	position: relative
 }
@@ -212,6 +208,7 @@ section {
 	border-radius: 0;
 	counter-increment: carousel-cell;
 	margin-top: 2em;
+	text-align: center
 }
 .amenities .carousel-cell.is-selected h2, .amenities .carousel-cell.is-selected p.description {
 	opacity: 1
@@ -279,7 +276,8 @@ section {
 	background: url(../images/life-game-bg.jpg) no-repeat;
 	min-height: 763px;
 	color: #fff;
-	display: flex
+	display: flex;
+	text-align: center
 }
 .life-game h2 {
 	font-family: 'Roboto', sans-serif;
@@ -502,27 +500,16 @@ header button {
 	width: 100%;
 }
 }
-
-@media screen and (max-width: 767px) {
-html {
-	font-size: 85%
+@media screen and (min-width:1201px) and (max-width:1400px){
+	nav ul li {		font-size: 0.8em; padding: 2.5em 0.4em;}
+	header .btn {
+	padding: 10px;
+	margin: 0;
+	font-size: 0.8em;
 }
-h1 {
-	font-size: 3em
+	.just-step-away .carousel-cell h2 {		font-size: 1.2em;}
 }
-h2 {
-	font-size: 3.5em !important;
-	margin: 0
-}
-h3 {
-	font-size: 2em
-}
-h4 {
-	font-size: 1.5em
-}
-section {
-	min-height: auto
-}
+@media screen and (max-width:1200px){
 header {
 	height: 60px !important;
 	background: #fff!important;
@@ -532,6 +519,7 @@ header {
 }
 .stickyheader header {
     top: 0;
+	padding-top: 10px;
 }
 header nav {
 	display: none
@@ -616,7 +604,36 @@ header .burger-button.active .line:nth-child(3) {
 }
 	header .logo .defaultlogo{ display:none}
 	header .logo .stickylogo{ display:block}
-	.stickyheader header .logo img {    height: auto;}
+	.stickyheader header .logo img {    height: auto;}	
+}
+@media screen and (min-width: 768px) and (max-width:1024px) {
+	html{ font-size:85%}
+	.just-step-away .carousel-cell h2 {    font-size: 1.2em;}
+	.video-reso .reso-content {    margin-top: 2em;}
+	.just-step-away .flickity-prev-next-button {
+    transform: translateY(-25%) scale(0.7);
+}
+}
+@media screen and (max-width: 767px) {
+html {
+	font-size: 85%
+}
+h1 {
+	font-size: 3em
+}
+h2 {
+	font-size: 3.5em !important;
+	margin: 0
+}
+h3 {
+	font-size: 2em
+}
+h4 {
+	font-size: 1.5em
+}
+section {
+	min-height: auto
+}
 .hero-banner .hero-content {
 	position: absolute;
 	top: inherit;
