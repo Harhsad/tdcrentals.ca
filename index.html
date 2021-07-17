@@ -22,9 +22,21 @@
     <header>
     <div class="container-fluid">
     <div class="row">
-     <div class="col-lg-2">
-     <div class="logo"><a href="#"><img src="images/tdcrentals-logo.png" class="defaultlogo" alt="logo" /><img src="images/tdcrentals-logo-sticky.png" class="stickylogo" alt="logo" /></a></div></div>   
-     <div class="col-lg-8">
+     <div class="col-4 col-lg-2">
+     <div class="logo"><a href="#"><img src="images/tdcrentals-logo.png" class="defaultlogo" alt="logo" /><img src="images/tdcrentals-logo-sticky.png" class="stickylogo" alt="logo" /></a></div></div>  
+
+      <div class="col-6 col-lg-2 order-xl-3 align-self-center text-right">
+        <a href="#" class="btn btn-red">Book My Stay</a>
+        <a href="#" class="btn btn-outline-light">Login</a>
+      </div>
+      
+      <div class="col-2 col-lg-8 order-xl-2">
+      <button class="burger-button">
+      	<span class="line"></span>
+      	<span class="line"></span>
+      	<span class="line"></span>
+      </button>
+      <div class="nav-overlay-mobile">
 	<nav>
        <ul>
         <li><a href="#">Home</a></li>
@@ -38,12 +50,10 @@
         <li><a href="#">TICKETS</a></li>
         </ul>
         </nav>
+        </div>
       </div>
-
-      <div class="col-lg-2 align-self-center text-right">
-        <a href="#" class="btn btn-red">Book My Stay</a>
-        <a href="#" class="btn btn-outline-light">Login</a>
-      </div>
+      
+      
       </div>
       </div>
     </header>
@@ -216,7 +226,7 @@
     <h1>Just Step Away</h1>	
     
     <!-- Flickity HTML init -->
-<div class="carousel" data-flickity='{ "cellAlign": "left" }'>
+<div class="carousel neighbour-carousel" data-flickity='{ "cellAlign": "left" }'>
   <div class="carousel-cell">
       <h2>Old Port of Montreal</h2>
       <img src="images/stepaway1.jpg" alt="" />      
@@ -282,7 +292,7 @@
     <footer>
     <div class="container">
     <div class="row">
-    <div class="col-sm-3 mb-5">
+    <div class="col-sm-3 mb-5 hidden-small">
     <div class="foot-nav">
     <h3>MENU</h3>
     <ul>
@@ -327,9 +337,9 @@ Canada</li>
     </div>	
     
     <div class="copyright">
-    <div class="row justify-content-around">
-    <div class="col-sm-6"><p>©Copyright 2021. All Rights Reserved.</p></div>
-    <div class="col-sm-6 align-self-end text-right"><p><a href="#">Privacy Policy</a>   |   <a href="#">Terms and Conditions</a></p></div>	
+    <div class="row">
+    <div class="col-sm-6 order-md-2 align-self-end text-right"><p><a href="#">Privacy Policy</a>   |   <a href="#">Terms and Conditions</a></p></div>	
+    <div class="col-sm-6 text-left"><p>©Copyright 2021. All Rights Reserved.</p></div>    
     </div>
     </div>
     
@@ -347,7 +357,12 @@ Canada</li>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
   <script src="js/flickity-docs.min.js"></script>
-  
+  <script>
+	  $(".burger-button").click(function(){
+  $(".nav-overlay-mobile").toggleClass("active");
+		  $(".burger-button").toggleClass("active");
+});
+	</script>
   
   
   </body>
