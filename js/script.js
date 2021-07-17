@@ -1,6 +1,4 @@
 // JavaScript Document
-$( document ).ready(function() {
-});
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
@@ -9,4 +7,15 @@ $(window).scroll(function() {
     } else {
         $("body").removeClass("stickyheader");
     }
+});
+$( document ).ready(function() {
+new WOW().init();
+
+$('.reset').click(function(){
+  new WOW().init();
+})
+	  $(".burger-button").click(function(){
+  $(".nav-overlay-mobile").toggleClass("active");
+		  $(".burger-button").toggleClass("active");
+});
 });
