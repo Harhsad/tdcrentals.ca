@@ -524,11 +524,13 @@ section {
 	min-height: auto
 }
 header {
-	height: 50px !important;
 	background: #fff!important;
 	display: flex;
 	align-items: center;
 	top: 0;
+}
+.stickyheader header {
+    top: 0;
 }
 header nav {
 	display: none
