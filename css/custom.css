@@ -104,6 +104,34 @@ nav ul li a {
 nav ul li a:hover {
 	color: #eee
 }
+.dropdown ul {
+	display: none;
+	position:absolute;
+	background: #fff;
+	min-width: 120px;
+	border-radius: 6px;
+	padding: 10px 0;
+  }
+.dropdown > a::after {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 1px 1px 0 0;
+	transform: rotate(135deg);
+	margin: 4px 6px;
+  }
+  .stickyheader .dropdown > a::after{border-color: #000;}
+  .dropdown:hover ul {
+	display: block;
+	position:absolute
+  }
+  .dropdown ul li{ padding: 5px; display: block; border-bottom: #e3e3e3 solid 1px;}
+  .dropdown ul li:last-child{ border:none}
+  .dropdown ul li a{ color:#000}
+  .dropdown ul li a:hover{color:#4e4e4e}
 header .btn {
 	padding: 0.6em 1em;
 	font-size: 0.9em
@@ -129,7 +157,7 @@ header .btn {
 .stickyheader header .logo img {
 	height: 60px
 }
-.stickyheader header nav ul li a {
+.stickyheader header nav ul li a{
 	color: #000;
 }
 .stickyheader header .btn {
@@ -444,7 +472,7 @@ header .btn {
 	background: #fff
 }
 footer {
-	background: url(../images/footerbg.jpg) no-repeat;
+	background: url(../images/footerbg.jpg) repeat;
 	padding: 5em 0 3em 0;
 	backgroung-size: cover
 }
